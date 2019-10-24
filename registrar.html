@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <title>Craftsy</title>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html"><img id="logo" src="imagens/logo.png" alt="Logo Craftsy"
+                            stitle="Logo Craftsy"></a></li>
+                <li><a href="index.html">Smartphones</a></li>
+                <li><a href="index.html">Tablets</a></li>
+                <li><a href="index.html">Computadores</a></li>
+                <li class="login-registrar"><a href="login.html">Login</a></li>
+                <li class="login-registrar"><a href="registrar.html">Registrar</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="registrar">
+
+        <h1 id="registrar-titulo">Registrar</h1>
+
+        <form action="login.html" method="post">
+
+        <label for="nome">Nome*</label><br>
+        <input type="text" name="nome" id="nome" placeholder="Nome completo" required><br>
+
+        <label for="email">Email*</label><br>
+        <input type="text" name="email" id="email" placeholder="email@email.com" required><br>
+
+        <label for="senha">Senha*</label><br>
+        <input type="password" name="senha" id="senha" placeholder="Senha" required><br>
+
+        <label for="pais"><span class="titulos">País de nascimento</span></label><br>
+        <select name="pais" id="pais">
+            <option disabled selected>Selecione uma opção</option>
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="chile">Chile</option>
+            <option value="peru">Peru</option>
+        </select><br>
+
+        <label for="genero"><span class="titulos">Gênero</span></label><br>
+        <input class="opcao" type="radio" name="genero" id="masculino" value="masculino"><span class="genero">Masculino</span>
+        <input class="opcao" type="radio" name="genero" id="feminino" value="feminino" checked><span class="genero">Feminino</span>
+        <input class="opcao" type="radio" name="genero" id="prefironaodizer" value="feminino"><span class="genero">Prefiro não dizer</span>
+        <br>
+
+        <label for="hobbies"><span class="titulos">Hobbies</span></label><br>
+        <input class="opcao" type="checkbox" name="interesse" id="guitarra" value="guitarra">
+        <label for="guitarra">Guitarra</label>
+        <input class="opcao" type="checkbox" name="interesse" id="futebol" value="futebol">
+        <label for="futebol">Futebol</label>
+        <input class="opcao" type="checkbox" name="interesse" id="tenis" value="tenis">
+        <label for="tenis">Tênis</label>
+        <input class="opcao" type="checkbox" name="interesse" id="programação" value="programação" checked>
+        <label for="programação">Programação</label><br>
+
+        <label for="comentario"><span class="titulos">Comentários</span></label><br>
+        <textarea name="comentario" id="" cols="50" rows="10"></textarea>
+
+        <label for="aceito"><input class="aceito-checkbox" type="checkbox" name="aceito" id="aceito" value="aceito" required><span id="termos">Aceito os termos de uso</span></label><br>
+    
+
+        <button id="login-registrar" type="submit">Registrar</button>
+
+        </form>
+    </section>
+
+
+
+
+
+
+
+</body>
+
+</html>
